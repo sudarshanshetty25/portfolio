@@ -1,0 +1,172 @@
+/* Base Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #e0e0e0;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Theme Variables */
+:root {
+    --background-color: #121212;
+    --text-color: #e0e0e0;
+    --primary-color: #035422;
+    --secondary-color: #42b158;
+    --accent-color: #333;
+    --card-background: #1c1c1c;
+    --pagination-background: #333;
+    --pagination-active: #1e88e5;
+    --link-color: #1e88e5;
+}
+
+
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 40px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.profile-info {
+    text-align: left;
+    max-width: 600px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--accent-color);
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+h2:hover {
+    color: var(--primary-color);
+}
+
+/* Navigation Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: var(--accent-color);
+    margin: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 15px 20px;
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+}
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 280px;
+    background-color: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background-color: var(--secondary-color);
+    color: rgb(6, 5, 5);
+}
+
+
+
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-top: 1px solid var(--secondary-color);
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+a {
+ color: greenyellow;
+ text-decoration: none;
+}
